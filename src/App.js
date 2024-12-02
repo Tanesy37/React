@@ -2,13 +2,13 @@ import { useState } from "react";
 import NavBar from "./Nav";
 import Propsy from "./props";
 
-
 function App() {
   const [names, setNames] = useState([
     {
       name: "isaac",
       age: 99,
       country: "denmark",
+      school: "///",
       id: 8989,
     },
     {
