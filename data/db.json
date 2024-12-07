@@ -1,0 +1,30 @@
+{
+    "post":[
+        {
+            "name": "Isaac",
+            "age": 99,
+            "country": "denmark",
+            "id": 8989
+        },
+        {
+            "name": "Rodny",
+            "age": 99,
+            "country": "ghana",
+            "id": 58669
+        },
+        {
+            "name": "Peter",
+            "age": 77,
+            "country": "norawy",
+            "id": 3656
+        }
+    ],
+    "polls":[
+        {
+            "id":1,
+            "name":"Rodny",
+            "age":99
+            
+        }
+    ]
+}
