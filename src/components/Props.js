@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FnForProps from "./FnForProps"
 
 export default function Props() {
-    const [names,] = useState([
+    const [names, setNames] = useState([
         {
             name: "Isaac",
             age: 99,
@@ -11,7 +11,7 @@ export default function Props() {
         },
         {
             name: "Rodny",
-            age: 101,
+            age: 99,
             country: "ghana",
             id: 58669,
         },
@@ -23,10 +23,24 @@ export default function Props() {
         },
     ]);
 
-    console.log(names[0]);
+    function handelDelet(id) {
+        const filted = names.filter((e) => e.id !== id)
+        setNames(filted);
+    }
+
+    useEffect(() => {
+        console.log("use effect ran");
+        console.log(names);
+    })
     return (
         <>
-            <FnForProps names={names}></FnForProps>
+            <div>
+                <FnForProps names={names} handelDelet={handelDelet}></FnForProps>
+            </div>
+
+            <div>
+                <h1 style={{ color: "red" }}>99 and above age down here :</h1>
+            </div>
         </>
     )
 }

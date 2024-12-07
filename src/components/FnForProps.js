@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function FnForProps(props) {
-    const names = props.names
+export default function FnForProps({ names, handelDelet }) {
+
 
     return (
         <>
@@ -10,6 +10,7 @@ export default function FnForProps(props) {
                     <h1>{e.name}</h1>
                     <p>{e.age}</p>
                     <p>{e.country}</p>
+                    <button onClick={() => handelDelet(e.id)}>delet</button>
                 </div>
 
                 ))}

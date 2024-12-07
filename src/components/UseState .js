@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function UseState() {
   const [greet, setGreet] = useState("Welcome")
   const [age, setAge] = useState(99)
+
   function handleGreet() {
     greet === "Welcome" ? setGreet("GoodBye") : setGreet("Welcome")
     age === 99 ? setAge(77) : setAge(99)
