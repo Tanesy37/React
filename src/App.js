@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';  // Assuming Navbar is in the same folder
-import Create from './components/create';      // Make sure Blog component is correctly imported
+import Navbar from './components/Navbar';  
+import Create from './components/create';      
 import Home from './components/Home';
 import Blogdetails from './components/Blogdetails';
 import NotFound from './components/NotFound';
