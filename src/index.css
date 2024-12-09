@@ -1,18 +1,18 @@
 .Navbar {
     display: flex;
-    justify-content: space-around;  /* Space between brand and the navbar links */
-    align-items: center;             /* Optional: To center the content vertically */
+    justify-content: space-around;  
+    align-items: center;           
 }
 
 .Navbar-links {
     display: flex;
-    justify-content: space-between;  /* Space between each <a> tag */
-    width: 10%;                     /* Make sure the container takes up full width */
+    justify-content: space-between; 
+    width: 10%;                     
 }
 
 .Navbar-links a {
     color: red;  
-    text-decoration: none;                    /* Link color */
+    text-decoration: none;                  
 }
 .props {
     text-decoration: none;
