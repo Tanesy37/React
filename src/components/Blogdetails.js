@@ -9,7 +9,7 @@ export default function Blogdetails() {
     const { data, isLoading, error } = useFecthData("http://localhost:8000/blogs/" + id)
     const navigate = useNavigate()
 
-    /* delete item/blog */
+    /* delete items/blogs */
     const handelDelete = () => {
         fetch("http://localhost:8000/blogs/" + id, {
             method: "DELETE"
