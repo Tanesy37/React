@@ -19,7 +19,7 @@
 ## 2. **React Router (for navigation)**
 - Install React Router:
   ```bash
-  npm install react-router-dom
+  npm install react-router-dom@"version-here not as string, fx: @5 "
   ```
 - Example usage:
   ```jsx

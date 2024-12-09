@@ -8,25 +8,38 @@ export default function useFecthData(url) {
 
 
     useEffect(() => {
-        fetch(url)
-            .then((res) => {
-                if (!res.ok) {
-                    throw Error("end point does not exist")
-                }
-                return res.json()
-            })
-            .then((data) => {
-                setData(data)
-                setLoading(false)
-                setError(null)
-                console.log("data :", data);
-            })
-            .catch((err) => {
-                setError(err.message)
-                setLoading(false)
-                console.log(err.message);
+        const abortController = new AbortController();
+        const signal = abortController.signal;
+        const timer = setTimeout(() => {
+            fetch(url, { signal })
+                .then((res) => {
+                    if (!res.ok) {
+                        throw Error("end point does not exist")
+                    }
+                    return res.json()
+                })
+                .then((data) => {
+                    setData(data)
+                    setLoading(false)
+                    setError(null)
+                    console.log("data :", data);
+                })
+                .catch((err) => {
+                    if (err.name === "AbortError") {
+                        console.log("fetch aborted");
+                    } else {
+                        setError(err.message)
+                        setLoading(false)
 
-            })
+                    }
+
+                })
+
+        }, 1000)
+        return () => {
+            clearTimeout(timer);
+            abortController.abort();
+        };
     }, [url]);
 
 

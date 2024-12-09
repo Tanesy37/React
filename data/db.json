@@ -1,30 +1,39 @@
 {
-    "post":[
-        {
-            "name": "Isaac",
-            "age": 99,
-            "country": "denmark",
-            "id": 8989
-        },
-        {
-            "name": "Rodny",
-            "age": 99,
-            "country": "ghana",
-            "id": 58669
-        },
-        {
-            "name": "Peter",
-            "age": 77,
-            "country": "norawy",
-            "id": 3656
-        }
-    ],
-    "polls":[
-        {
-            "id":1,
-            "name":"Rodny",
-            "age":99
-            
-        }
-    ]
+  "blogs": [
+    {
+      "name": "Peter",
+      "age": 77,
+      "country": "norawy",
+      "about": "Vestibulum tempor sodales quam id venenatis. Donec sit amet enim elementum, fringilla velit sit amet, gravida mi. Etiam laoreet, urna id dictum pretium, arcu magna finibus purus, quis ullamcorper nisl nulla at nulla. Cras libero erat, mollis eu eleifend et, tristique at libero. Donec est tellus, elementum id libero non, porta sollicitudin ipsum. Sed a finibus dui, vitae venenatis nunc. In neque mi, varius non felis ac, lobortis sagittis tortor. Cras ut quam a massa congue aliquam vel auctor odio. Vestibulum et congue massa. Sed luctus ultricies urna molestie venenatis. Suspendisse gravida erat ac sapien aliquam, ac accumsan velit ornare. Quisque odio velit, sollicitudin at lacus ut, ullamcorper convallis est. Nunc hendrerit mi eget magna hendrerit ornare et ac urna. Proin sit amet ante non ipsum finibus placerat. Etiam dui est, tempor eu ligula nec, auctor accumsan tortor.",
+      "id": "3"
+    },
+    {
+      "id": "627a",
+      "name": "Melody",
+      "about": "my name is melody and i like going to the gym to train butt",
+      "age": 99,
+      "country": "Ghana"
+    },
+    {
+      "name": "Rodny",
+      "age": 99,
+      "country": "Denmark",
+      "about": "Vestibulum tempor sodales quam id venenatis. Donec sit amet enim elementum, fringilla velit sit amet, gravida mi. Etiam laoreet, urna id dictum pretium, arcu magna finibus purus, quis ullamcorper nisl nulla at nulla. Cras libero erat, mollis eu eleifend et, tristique at libero. Donec est tellus, elementum id libero non, porta sollicitudin ipsum. Sed a finibus dui, vitae venenatis nunc. In neque mi, varius non felis ac, lobortis sagittis tortor. Cras ut quam a massa congue aliquam vel auctor odio. Vestibulum et congue massa. Sed luctus ultricies urna molestie venenatis. Suspendisse gravida erat ac sapien aliquam, ac accumsan velit ornare. Quisque odio velit, sollicitudin at lacus ut, ullamcorper convallis est. Nunc hendrerit mi eget magna hendrerit ornare et ac urna. Proin sit amet ante non ipsum finibus placerat. Etiam dui est, tempor eu ligula nec, auctor accumsan tortor.",
+      "id": "3"
+    },
+    {
+      "id": "b943",
+      "name": "512",
+      "about": "65126",
+      "age": 99,
+      "country": "Denmark"
+    },
+    {
+      "id": "d936",
+      "name": "205",
+      "about": "51256",
+      "age": 99,
+      "country": "sweden"
+    }
+  ]
 }

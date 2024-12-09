@@ -1,0 +1,67 @@
+.Navbar {
+    display: flex;
+    justify-content: space-around;  /* Space between brand and the navbar links */
+    align-items: center;             /* Optional: To center the content vertically */
+}
+
+.Navbar-links {
+    display: flex;
+    justify-content: space-between;  /* Space between each <a> tag */
+    width: 10%;                     /* Make sure the container takes up full width */
+}
+
+.Navbar-links a {
+    color: red;  
+    text-decoration: none;                    /* Link color */
+}
+.props {
+    text-decoration: none;
+   background-color: rgb(196, 207, 196);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+
+  
+  
+    
+}
+
+.props > p {
+   
+  color: red;
+   
+  
+    
+}
+
+.create{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label{
+    text-align: left;
+    display: block;
+}
+
+.create h2 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 30px;
+}
+.create input, .create textarea, .create select{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button{
+    background-color: rgb(168, 103, 103);
+    color: white;
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
